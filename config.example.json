@@ -1,0 +1,21 @@
+{
+  "subnet": "192.168.1",
+  "ports": [22, 80, 443, 445, 3389, 8080],
+  "risky_ports": {
+    "21": "FTP (unencrypted file transfer)",
+    "23": "Telnet (unencrypted remote shell)",
+    "445": "SMB (common ransomware/lateral-movement target)",
+    "3389": "RDP (remote desktop exposed)"
+  },
+  "known_devices": {
+    "AA-BB-CC-DD-EE-FF": "Example - My Laptop (replace with real MACs after first scan)"
+  },
+  "email": {
+    "enabled": false,
+    "smtp_host": "smtp.office365.com",
+    "smtp_port": 587,
+    "username": "bleon42@hotmail.com",
+    "password": "APP_PASSWORD_HERE",
+    "to": "bleon42@hotmail.com"
+  }
+}
